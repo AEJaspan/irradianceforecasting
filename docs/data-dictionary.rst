@@ -17,6 +17,18 @@ File formats
 All time series data files as in CSV (comma separated values)
 Images are given in tar.bz2 files
 
+Data Description
+==================
+
+* Day ahead weather forecasts for closest weather stations
+   * Granularity: Hourly
+* Satellite imagery from GOES-15
+   * Granularity: 15 Minute
+* Imagery from Whole Sky Cameras
+   * Granularity: Minutely
+
+Models are developed on historical data including 2014 and 2015, and are then evaluated against 2015 data.
+
 Tables
 ======
 

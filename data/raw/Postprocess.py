@@ -4,6 +4,7 @@ import os
 import glob
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
 processed_data_path="data/processed"
 
@@ -29,6 +30,7 @@ def summary_stats(target, filenames, baseline="sp"):
     """
 
     results = []
+    merge=pd.DataFrame()
     for filename in filenames:
         df = pd.read_hdf(filename, "df")
 
@@ -38,8 +40,12 @@ def summary_stats(target, filenames, baseline="sp"):
 
         # error metrics
         for dataset, group in df.groupby("dataset"):
+            bl = group["{}_{}".format(target, baseline)].copy()
+            col_name=f"{dataset}_{target}_{baseline}_{horizon}"
+            print(col_name)
+            merge[col_name]=bl
             for model in [baseline,"ols_endo", "ridge_endo", "lasso_endo","ols_exo", "ridge_exo", "lasso_exo"]:
-
+        
                 # error metrics [W/m^2]
                 error = (group["{}_{}".format(target, horizon)] - group["{}_{}".format(target, model)]).values
                 mae = np.nanmean(np.abs(error))
@@ -69,7 +75,8 @@ def summary_stats(target, filenames, baseline="sp"):
                         "baseline": baseline,  # the baseline forecast name
                     }
                 )
-
+        name = Path(filename).stem.split('_')[1]
+        merge.to_csv(f'data/external/baseline_{name}.csv')
     # return as a DataFrame
     return pd.DataFrame(results)
 
