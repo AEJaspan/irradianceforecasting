@@ -1,3 +1,6 @@
+![Documentation Build Status](https://readthedocs.org/projects/irradianceforecastin/badge/?version=latestg)
+
+
 # IrradianceForecasting
 ==============================
 
