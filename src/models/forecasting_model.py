@@ -34,14 +34,14 @@ class IrradianceForecastingModel:
             print("Particle Filter Metrics:")
             print(pf_metrics)
 
-# Train SARIMAX model
-sarimax_order = (1, 1, 1)
-sarimax_seasonal_order = (1, 1, 1, 24)  # Example seasonal order for daily data
-model.train_sarimax(data_pipeline.Xtra, ytra, sarimax_order, sarimax_seasonal_order, exog=data_pipeline.Xtra)
+# # Train SARIMAX model
+# sarimax_order = (1, 1, 1)
+# sarimax_seasonal_order = (1, 1, 1, 24)  # Example seasonal order for daily data
+# model.train_sarimax(data_pipeline.Xtra, ytra, sarimax_order, sarimax_seasonal_order, exog=data_pipeline.Xtra)
 
-# Train Particle Filter model
-initial_state_mean = np.zeros(1)  # Assuming irradiance is the first dimension
-initial_state_covariance = np.eye(1)
-transition_covariance = np.eye(1)
-observation_covariance = np.eye(1)
-model.train_particle_filter(data_pipeline.Xtra, ytra, initial_state_mean, initial_state_covariance, transition_covariance, observation_covariance)
+# # Train Particle Filter model
+# initial_state_mean = np.zeros(1)  # Assuming irradiance is the first dimension
+# initial_state_covariance = np.eye(1)
+# transition_covariance = np.eye(1)
+# observation_covariance = np.eye(1)
+# model.train_particle_filter(data_pipeline.Xtra, ytra, initial_state_mean, initial_state_covariance, transition_covariance, observation_covariance)

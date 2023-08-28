@@ -19,7 +19,7 @@ Contents:
 
    getting-started
    data-dictionary
-   commands
+   source/modules
 
 
 Indices and tables
