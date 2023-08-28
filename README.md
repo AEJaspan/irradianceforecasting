@@ -1,4 +1,4 @@
-![Documentation Build Status](https://readthedocs.org/projects/irradianceforecastin/badge/?version=latestg)
+[[!Documentation Build Status](https://readthedocs.org/projects/irradianceforecastin/badge/?version=latestg)](https://pollscraper.readthedocs.io/en/latest/?version=latest)
 
 
 # IrradianceForecasting
@@ -30,6 +30,13 @@ source data/raw/collect.sh
 ```
 cd docs
 make html
+```
+
+
+## Testing and Linting
+
+```
+tox
 ```
 
 
