@@ -19,6 +19,7 @@ Contents:
 
    getting-started
    data-dictionary
+   commands
 
 
 Indices and tables
