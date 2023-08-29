@@ -11,7 +11,6 @@ Subpackages
    src.features
    src.models
    src.utils
-   src.visualization
 
 Module contents
 ---------------

@@ -12,14 +12,6 @@ src.models.forecasting\_model module
    :undoc-members:
    :show-inheritance:
 
-src.models.predict\_model module
---------------------------------
-
-.. automodule:: src.models.predict_model
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 src.models.train\_model module
 ------------------------------
 
