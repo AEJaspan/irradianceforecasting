@@ -1,4 +1,4 @@
-[![Documentation Build Status](https://readthedocs.org/projects/irradianceforecastin/badge/?version=latestg)](https://pollscraper.readthedocs.io/en/latest/?version=latest)
+[![Documentation Build Status](https://readthedocs.org/projects/irradianceforecasting/badge/?version=latestg)](https://irradianceforecastin.readthedocs.io/en/latest/?version=latest)
 
 
 # IrradianceForecasting
