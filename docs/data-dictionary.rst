@@ -33,25 +33,25 @@ Tables
 ======
 
 .. csv-table:: List of extracted NAM variables.
-   :file: NAM-Variables.csv
+   :file: _static/NAM-Variables.csv
    :header-rows: 1
 
 .. csv-table:: Nomenclature.
-   :file: Nomenclature.csv
+   :file: _static/Nomenclature.csv
    :header-rows: 1
 
 .. csv-table:: intra times.
-   :file: intra-times.csv
+   :file: _static/intra-times.csv
    :delim: ;
    :header-rows: 1
 
 .. csv-table:: NAM Gridpoints.
-   :file: NAM-Gridpoints.csv
+   :file: _static/NAM-Gridpoints.csv
    :header-rows: 1
 
 
 .. csv-table:: File Dictionary
-   :file: file-dictionary.csv
+   :file: _static/file-dictionary.csv
    :header-rows: 1
    :delim: :
 
