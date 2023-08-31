@@ -13,7 +13,7 @@
 
 import os
 import sys
-from src.data import *
+from src.data import split_data
 from src.features import *
 from src.models import *
 from src.utils import *
@@ -129,7 +129,9 @@ html_theme = 'default'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+print(os.getcwd())
+print(os.listdir())
+html_static_path = ['docs/_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
