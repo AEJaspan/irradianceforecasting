@@ -1,0 +1,25 @@
+Variable, Explanation
+B / L / V ,Irradiance time series features
+DHI, Diffuse horizontal irradiance
+DNI, Direct normal irradiance
+DSWRF, Downward short-wave radiation flux
+GHI, Global horizontal irradiance
+GOES, Geostationary operational environmental satellite
+:math:`I / I_{cs}`, Irradiance (GHI or DNI) and clear-sky irradiance
+:math:`\hat{I}`, Forecasted irradiance
+:math:`k_t`, Clear-sky index
+MAE, Mean absolute error
+MBE, Mean bias error
+NAM, North American mesoscale forecast system
+NWP, Numerical weather prediction
+OLS, Ordinary least squares
+PST, Pacific standard time
+RGB, Red-Green-Blue
+RMSE, Root mean square error
+RSR, Rotating shadowband radiometer
+:math:`t_0`, Forecasting issuing time
+TCDC, Total cloud cover
+UTC, Coordinated Universal Time
+D, Data aggregation window
+:math:`\mu / \sigma / e`, Sky image features
+:math:`\tau`, Forecasting horizon

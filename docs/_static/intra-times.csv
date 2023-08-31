@@ -1,0 +1,4 @@
+;:math:`\Delta`; :math:`\tau`; :math:`t_0`
+Intrahour; 5 min; {5, 10, …, 30} min; Every 5 min
+Intraday; 30 min; {30, 60, …, 180} min; Every 30 min
+Day-ahead; 1 h; {26, 27, …, 39} h; Daily at 12:00 UTC

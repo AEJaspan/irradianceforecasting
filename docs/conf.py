@@ -131,7 +131,7 @@ html_theme = 'default'
 # so a file named "default.css" will overwrite the builtin "default.css".
 print(os.getcwd())
 print(os.listdir())
-html_static_path = ['docs/_static']
+html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.

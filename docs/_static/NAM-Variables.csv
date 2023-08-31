@@ -1,0 +1,9 @@
+Variable, NAM name, Description, Units
+Pressure, PRES: surface, Surface pressure, Pa
+Temperature, TMP: surface, Surface temperature, K
+Relative humidity, RH: 2 m above ground, Relative humidity 2 m above ground,%
+V-wind, VGRD: 10 m above ground, V-component of wind 10 m above ground, :math:`ms^{-1}`
+U-wind, UGRD: 10 m above ground, U-component of wind 10 m above ground, :math:`ms^{-1}`
+Precipitation, APCP: surface, Total precipitation, :math:`kg/m^{2}`
+GHI, DSWRF: surface, Downward short-wave radiation flux, :math:`W/m^{2}`
+Cloud cover, TCDC: entire atmosphere, Total cloud cover, %
