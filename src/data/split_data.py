@@ -69,6 +69,7 @@ class DataPipeline:
         test_X_endo  = test[feature_cols_endo].values
 
         self.train_y = train["{}_kt_{}".format(target_variable,time_horizon)].values
+        self.test_y = test["{}_kt_{}".format(target_variable,time_horizon)].values
         elev_train = train["elevation_{}".format(time_horizon)].values
         elev_test  = test["elevation_{}".format(time_horizon)].values
 

@@ -13,4 +13,5 @@ from .features.build_features import (
 )
 from .visualisation.make_visualisations import plot_skill
 from .models.train_model import Model
+from .models.forecasting_model import IrradianceForecastingModel
 from .utils.evaluation import summary_stats

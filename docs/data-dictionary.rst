@@ -29,6 +29,9 @@ Data Description
 
 Models are developed on historical data including 2014 and 2015, and are then evaluated against 2015 data.
 
+The primary datasets for solar forecasting are the two main modes of solar irradiance, namely, GHI (global) and DNI (beam). These two variables are used to train the models and assess the fore- casting performance.
+DNI is computed directly from the GHI, DHI, and solar zenith angle (:math:`theta_{z}`).
+
 Tables
 ======
 
