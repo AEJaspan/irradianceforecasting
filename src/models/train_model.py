@@ -29,6 +29,7 @@ class Model:
         self.dp = data_pipeline
         model = IrradianceForecastingModel()
         self.models = [
+            ["trf", model.train_transformer, model.forecast_transformer],
             ["PF", model.train_particle_filter, model.forecast_pf],
             ["OLS", model.train_ols, model.forecast_ols],
         ]
@@ -46,8 +47,8 @@ class Model:
             for name, train_fn, pred_fn in self.models:
                 print(f, name, self.dp.target_variable, self.dp.time_horizon)
                 model = train_fn(Xtra, self.dp.train_y)
-                train_pred = pred_fn(model, Xtra)
-                test_pred = pred_fn(model, Xtes)
+                train_pred = pred_fn(model, Xtra, self.dp.train_y)
+                test_pred = pred_fn(model, Xtes, self.dp.test_y)
                 # convert from kt [-] back to irradiance [W/m^2]
                 convert_units(train_pred, self.dp.train_clear)
                 convert_units(test_pred, self.dp.test_clear)
@@ -63,3 +64,15 @@ class Model:
                     else:
                         results[k].append(v)
         return pd.DataFrame(results)
+
+def get_forecast(Xtra, Xtes, dp, train_fn, pred_fn):
+    model = train_fn(Xtra, dp.train_y)
+    train_pred = pred_fn(model, Xtra)
+    test_pred = pred_fn(model, Xtes)
+    # convert from kt [-] back to irradiance [W/m^2]
+    convert_units(train_pred, dp.train_clear)
+    convert_units(test_pred, dp.test_clear)
+    # removes nighttime values (solar elevation < 5)
+    remove_nighttime_values(train_pred, dp.train_clear)
+    remove_nighttime_values(test_pred, dp.test_clear)
+    return train_pred, test_pred
