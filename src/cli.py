@@ -6,6 +6,7 @@ import pandas as pd
 from src import DataPipeline
 from src import Model
 from src import plot_skill
+from root import ROOT_DIR
 
 
 @click.command()
