@@ -16,4 +16,6 @@ scipy
 matplotlib
 pandas
 scikit-learn
-particles
+tensorflow
+plotly
+sphinx-click
