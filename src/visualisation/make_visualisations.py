@@ -31,6 +31,7 @@ def plot_skill(df):
         yaxis_title='Metrics',
         legend_title='Metric'
     )
+    fig.write_html(PLOT_DIR / f"results.html")
     fig.show()
 
 
