@@ -103,8 +103,8 @@ html_theme = 'default'
 
 html_context = {
     'display_github': True,
-    'github_repo': 'xyz',
-               }`
+    'github_repo': 'https://github.com/AEJaspan/irradianceforecasting',
+               }
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
