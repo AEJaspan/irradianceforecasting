@@ -17,5 +17,6 @@ matplotlib
 pandas
 scikit-learn
 tensorflow
+keras
 plotly
 sphinx-click
