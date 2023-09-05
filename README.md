@@ -6,6 +6,8 @@
 
 The goal is to develop a solution for short-term irradiance forecasting using historical data. Accurate irradiance forecasting is essential for renewable energy generators, especially solar power plants, to optimize their energy production. Data collected from Zenodo [id: [2826939](https://zenodo.org/record/2826939)] \cite{carreira_pedro_hugo_2019_2826939}.
 
+Full documentation of this task can be found on [Read the docs](https://readthedocs.org/projects/irradianceforecasting/).
+
 ## Setup
 
 ```
@@ -19,8 +21,18 @@ pip install -r optional-requirements.txt
 
 ## Run forecasting
 
+* To train the models and produce irradiance forecasts:
+
 ```
 $ IrradianceForecasting
+```
+
+*** Note: *** This command will not save the trained models. To persist the trained models to the `models/` directory, use the flag `--save_models`.
+
+* To produce irradiance forecasts from pre-trained models:
+
+```
+$ IrradianceForecasting --from_pretrained
 ```
 
 ## Collect data
