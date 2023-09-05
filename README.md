@@ -57,6 +57,14 @@ make html
 tox
 ```
 
+## TODO:
+
+* unit testing
+* extend tox tests
+* bayesian model selection
+* implement different solutions
+* code refactoring - separate out model definitions
+
 
 ## Project Organization
 ------------
