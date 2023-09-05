@@ -1,6 +1,6 @@
 # Importing the libraries
 from tensorflow import keras
-from keras.src.engine.sequential import Sequential
+from tensorflow.keras import Sequential
 from sklearn.model_selection import train_test_split
 from sklearn import linear_model
 from tensorflow.keras.saving import load_model as load_keras_model
